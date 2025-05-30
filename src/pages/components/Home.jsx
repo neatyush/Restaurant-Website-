@@ -1,4 +1,4 @@
-import Navbar from "./navbar";
+import Navbar from "./Navbar"; 
 import HeroSection from "./HeroSection";
 import MenuShowCase from "./MenuShowCase";
 import MenuSection from "./MenuSection";
