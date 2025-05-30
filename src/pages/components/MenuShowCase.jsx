@@ -22,10 +22,10 @@ const MenuShowCase = () => {
   transition={{ duration: 0.8, ease: "easeOut" }}
   viewport={{ once: false, amount: 0.3 }}>    
       <div className="flex flex-col items-center p-14 mt-4 mb-2 gap-4">
-        <h2 className="text-3xl font-semibold text-center lg:max-w-[700px]">
+        <h2 className="text-3xl font-semibold text-justify w-[350px] lg:max-w-[700px]">
           {companyMotto}
         </h2>
-        <h3 className="text-s">Our Founder {founderName}</h3>
+        <h3 className="text-s text-center">Our Founder {founderName}</h3>
         <p className="font-kristi text-4xl mt-4 text-red-500">{founderName}</p>
       </div>
 
@@ -37,8 +37,9 @@ const MenuShowCase = () => {
         <img src={momo} className="rounded-lg" alt="Momo at Gaunghar" />
         <img src={mains} className="rounded-lg" alt="Thakali at gaunghar" />
 
+        <div className="mb-view flex ml-auto mr-auto">
         {/* Our Story Section */}
-        <div className="card rounded-xl shadow-2xl flex flex-col box-border p-6 gap-4 lg:-translate-y-20 lg:h-96 ">
+        <div className="card rounded-xl shadow-2xl flex flex-col box-border p-6 gap-4 min-w-64 lg:-translate-y-20 lg:h-96 ">
           <h3 className="font-kristi text-3xl text-[#cfa670] font-semibold">
             Discover
           </h3>
@@ -49,6 +50,7 @@ const MenuShowCase = () => {
           <p className="text-sm text-[#222222] tracking-tighter lg:text-base ">
            {ourStory}
           </p>
+        </div>
         </div>
       </div>
       </motion.div>
@@ -69,7 +71,7 @@ const MenuShowCase = () => {
 
         <div className="absolute inset-0 flex flex-col items-center gap-6 justify-center text-center text-white px-4">
           <p className="font-kristi text-5xl text-[#cfa670]">Our Chef</p>
-          <h1 className="text-5xl font-bold tracking-tighter md:text-4xl lg:text-6xl ">
+          <h1 className="text-4xl font-bold tracking-tighter md:text-4xl lg:text-6xl ">
             RECOMMENDATION
           </h1>
         </div>

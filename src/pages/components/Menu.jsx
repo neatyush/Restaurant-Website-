@@ -6,7 +6,7 @@ const Menu = (props) => {
   return (
     <>
       {/* Wrapper */}
-      <div className="wrapper flex flex-col m-8 mb-0">
+      <div className="wrapper flex flex-col m-8">
         <h1 className="text-3xl font-extrabold p-0 ml-4">{heading}</h1>
         {/* Course Heading */}
         <div className="flex flex-col mt-2 box-border border-black border-[1px] rounded-xl">
@@ -28,7 +28,7 @@ const Menu = (props) => {
         {otherItems && otherItems.length > 0 && (
           <div> {/* Optional wrapper for the list */}
             {otherItems.map((item, index) => (
-              <div key={index} className="ml-6 mt-2">
+              <div key={index} className="ml-2 mt-2">
                 <p className="font-bold overflow-hidden">{item.food}    ...............................................................................................</p>
                 <p>Rs.{item.price}</p>
               </div>

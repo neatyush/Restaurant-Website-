@@ -79,6 +79,7 @@ const Foooter = () => {
 
           </div>
       </div>
+      <div className="mt-6 mb-0 flex flex-col items-center"><p>Powered by Neatyush @2025</p></div>
     </footer>
     </>
   );

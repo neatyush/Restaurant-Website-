@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <>
       {/* Mobile Header */}
-      <div className="sticky top-0 z-30 lg:hidden">
-        <div className="flex justify-between p-6 items-center bg-white h-20 shadow-sm">
+      <div className=" sticky top-0 z-20 lg:hidden">
+        <div className="flex justify-between p-6 items-center bg-white h-20 bg-opacity-95  shadow-sm">
           <header>
             <h1 className="text-[#333] font-bold text-2xl">GAUNGHAR</h1>
             <span className="text-sm font-semibold">
@@ -100,8 +100,8 @@ const Navbar = () => {
         </span>
       </div>
 
-      <nav className="hidden lg:flex justify-center sticky top-0 z-20 bg-white h-20 shadow-sm items-center">
-        <ul className="flex gap-10 text-sm font-semibold">
+      <nav className="hidden lg:flex justify-center sticky top-0 z-20 bg-white opacity-90 h-20 shadow-sm items-center">
+        <ul className="flex gap-10 text-sm font-semibold items-center">
           <a href="#home" className="hover:text-[#cfa617]">Home</a>
           <a href="#aboutus" className="hover:text-[#cfa617]">About Us</a>
           <a href="#menu" className="hover:text-[#cfa617]">Menu</a>
